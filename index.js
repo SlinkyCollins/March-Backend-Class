@@ -5,7 +5,7 @@ const app = express();
 const userRouter  = require("./Routes/user.Route")
 const mongoose = require("mongoose");
 const cors = require("cors");
-let uri = env.URL
+let uri = process.env.URL;
 
 app.use(cors());
 app.use(express.json({ limit: "50mb"}))
